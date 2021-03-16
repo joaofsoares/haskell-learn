@@ -48,10 +48,10 @@ cabal-version:       >=1.10
 
 library
   -- Modules exported by the library.
-  -- exposed-modules:
+  exposed-modules: App.HelloWorld
 
   -- Modules included in this library but not exported.
-  other-modules: App.HelloWorld
+  -- other-modules: App.HelloWorld
 
   -- LANGUAGE extensions used by modules in this package.
   -- other-extensions:
@@ -84,3 +84,18 @@ executable learn-haskell
 
   -- Base language which the package is written in.
   default-language:    Haskell2010
+
+test-suite test
+  default-language:
+    Haskell2010
+  type:
+    exitcode-stdio-1.0
+  hs-source-dirs:
+    tests
+  main-is:
+    AppTests.hs
+  build-depends:
+    base >=4.12 && <4.13,
+    tasty >= 1.4.1,
+    tasty-hunit >= 0.10.0.3,
+    learn-haskell >= 0.1.0.0
