@@ -15,8 +15,5 @@ getElement :: [(a, b)] -> [a]
 getElement tups = [fst $ head tups]
 
 getFirstNonRepeatedElement :: Eq a => [a] -> [a]
-getFirstNonRepeatedElement x = do
-  let grouped = groupElement x
-  let tups = map convertToTuples grouped
-  let filtered = filterTuple tups
-  getElement filtered
+getFirstNonRepeatedElement x =
+  getElement . filterTuple . map convertToTuples $ groupElement x

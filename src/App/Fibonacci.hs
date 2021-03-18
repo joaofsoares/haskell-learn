@@ -1,17 +1,17 @@
 module App.Fibonacci (fibonacci, fib, fibonacciRecursive) where
 
-fibonacci :: Int -> Integer
+fibonacci :: Int -> Int
 fibonacci 0 = 0
 fibonacci 1 = 1
 fibonacci n = fibonacci (n - 1) + fibonacci (n - 2)
 
-fibs :: [Integer]
+fibs :: [Int]
 fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
 
-fib :: Int -> Integer
+fib :: Int -> Int
 fib n = fibs !! n
 
-fibonacciRecursive :: Int -> Integer
+fibonacciRecursive :: Int -> Int
 fibonacciRecursive n = aux n 0 1
   where
     aux n prev next

@@ -1,6 +1,9 @@
 module App.HasPath (hasPath) where
 
-hasPath :: [(Int, Int)] -> Int -> Int -> Bool
+-- check if there is any sequence on tuples
+-- like (1,2), (2,3), (3,4) = true
+
+hasPath :: Eq b => [(b, b)] -> b -> b -> Bool
 hasPath [] x y = x == y
 hasPath xs x y
   | x == y = True

@@ -1,4 +1,4 @@
 module App.HelloWorld (printHelloWorld) where
 
-printHelloWorld :: String -> String
+printHelloWorld :: [Char] -> [Char]
 printHelloWorld s = "Hello World, " ++ s

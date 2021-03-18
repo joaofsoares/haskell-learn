@@ -1,6 +1,6 @@
 module App.RemoveDuplicates (nub) where
 
-nub :: (Eq a) => [a] -> [a]
+nub :: Eq a => [a] -> [a]
 nub [] = []
 nub (x : xs)
   | x `elem` xs = nub xs
