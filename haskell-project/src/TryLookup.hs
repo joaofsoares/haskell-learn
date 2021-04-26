@@ -1,4 +1,4 @@
-module App.TryLookup (findNum) where
+module TryLookup (findNum) where
 
 import Data.Maybe (fromMaybe)
 

@@ -1,4 +1,4 @@
-module App.Prime (isPrime) where
+module Prime (isPrime) where
 
 isPrime :: Integral a => a -> Bool
 isPrime 0 = False

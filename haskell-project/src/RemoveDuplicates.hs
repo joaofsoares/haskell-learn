@@ -1,4 +1,4 @@
-module App.RemoveDuplicates (nub) where
+module RemoveDuplicates (nub) where
 
 nub :: Eq a => [a] -> [a]
 nub [] = []

@@ -1,4 +1,4 @@
-module App.FindingElement (find) where
+module FindingElement (find) where
 
 find :: Eq t => t -> [t] -> Bool
 find _ [] = False

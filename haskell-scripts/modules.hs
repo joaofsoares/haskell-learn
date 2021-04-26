@@ -1,5 +1,5 @@
-import Data.Char
-import Data.List
+import Data.Char (chr, digitToInt, ord)
+import Data.List (find, group, isPrefixOf, nub, sort, tails)
 import qualified Data.Map as M
 
 numUniques :: (Eq a) => [a] -> Int

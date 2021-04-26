@@ -1,4 +1,4 @@
-module App.SortingList (sort) where
+module SortingList (sort) where
 
 insert :: Ord a => a -> [a] -> [a] -> [a]
 insert n sorted acc

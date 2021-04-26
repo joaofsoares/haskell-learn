@@ -1,4 +1,4 @@
-module App.FindFirstNonRepeatedElement (getFirstNonRepeatedElement) where
+module FindFirstNonRepeatedElement (getFirstNonRepeatedElement) where
 
 import Data.List (group)
 

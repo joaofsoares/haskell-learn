@@ -1,4 +1,4 @@
-module App.FormatList where
+module Format where
 
 import Data.List (intercalate)
 

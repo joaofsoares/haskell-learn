@@ -1,4 +1,4 @@
-module App.Factorial
+module Factorial
   ( factorial,
     factorial2,
     factorial3,

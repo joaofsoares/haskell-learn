@@ -1,4 +1,4 @@
-module App.Fibonacci (fibonacci, fib, fibonacciRecursive) where
+module Fibonacci (fibonacci, fib, fibonacciRecursive) where
 
 fibonacci :: (Eq a, Num a, Num p) => a -> p
 fibonacci 0 = 0

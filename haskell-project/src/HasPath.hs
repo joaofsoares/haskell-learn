@@ -1,4 +1,4 @@
-module App.HasPath (hasPath) where
+module HasPath (hasPath) where
 
 -- check if there is any sequence on tuples
 -- like (1,2), (2,3), (3,4) = true

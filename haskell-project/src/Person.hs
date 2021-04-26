@@ -1,4 +1,4 @@
-module App.Person where
+module Person where
 
 newtype Person = Person String
   deriving (Show)

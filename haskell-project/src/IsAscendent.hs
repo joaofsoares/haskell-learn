@@ -1,4 +1,4 @@
-module App.IsAscendent (isAsc) where
+module IsAscendent (isAsc) where
 
 isAsc :: Ord a => [a] -> Bool
 isAsc [] = True

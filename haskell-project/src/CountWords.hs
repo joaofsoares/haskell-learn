@@ -1,4 +1,4 @@
-module App.CountWords (wordNums) where
+module CountWords (wordNums) where
 
 import Data.List (group, sort)
 
