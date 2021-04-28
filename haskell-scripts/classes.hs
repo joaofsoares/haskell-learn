@@ -1,5 +1,3 @@
-module Person where
-
 data Person = Person {name :: String, age :: Int} deriving (Show)
 
 class MyPerson p where
@@ -10,9 +8,13 @@ instance MyPerson Person where
   getName (Person name age) = name
   getAge (Person name age) = age
 
-printMyPerson :: MyPerson p => p -> IO ()
-printMyPerson p = do
-  let name = getName p
-  let age = getAge p
-  print name
-  print age
+printPerson :: MyPerson p => p -> IO ()
+printPerson p = do
+  let personName = getName p
+  let personAge = getAge p
+  print personName
+  print personAge
+
+main :: IO ()
+main = do
+  printPerson $ Person "PersonName" 42
