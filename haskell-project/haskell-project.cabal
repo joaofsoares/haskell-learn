@@ -27,17 +27,20 @@ source-repository head
 
 library
   exposed-modules:
+      Anagram
       Circumference
       CountWords
       Factorial
       Fibonacci
       FindFirstNonRepeatedElement
       FindingElement
+      FizzBuzz
       Format
       HasPath
       HelloWorld
       IsAscendent
       MaximumWealth
+      Palindrome
       Person
       Prime
       PythagoreanTriple
