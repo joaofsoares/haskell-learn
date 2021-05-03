@@ -1,6 +1,6 @@
 module Tree where
 
-data Tree = Leaf | Node Int Tree Tree deriving (Show, Ord, Eq)
+data Tree = Leaf | Node Int Tree Tree deriving (Show)
 
 treeDepth :: Tree -> Int
 treeDepth Leaf = 0
@@ -34,4 +34,11 @@ convertTreeToList :: Tree -> [Int]
 convertTreeToList Leaf = []
 convertTreeToList (Node value subtree1 subtree2) =
   convertTreeToList subtree1 ++ [value] ++ convertTreeToList subtree2
+
+searchTree :: Int -> Tree -> Bool
+searchTree n Leaf = False
+searchTree n (Node value subtree1 subtree2)
+  | n == value = True
+  | n < value  = searchTree n subtree1
+  | n > value  = searchTree n subtree2
 
