@@ -18,3 +18,4 @@ main = do
   print $ doubleUs 2 2
   print $ doubleSmallNumber 50
   print $ doubleSmallNumber' 50
+

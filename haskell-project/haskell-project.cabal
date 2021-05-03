@@ -47,6 +47,7 @@ library
       QuickSort
       RemoveDuplicates
       SortingList
+			Tree
       TryLookup
   other-modules:
       Paths_haskell_project
