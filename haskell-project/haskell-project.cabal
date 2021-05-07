@@ -29,6 +29,7 @@ library
   exposed-modules:
       Anagram
       Circumference
+      CountDuplicates
       CountWords
       Factorial
       Fibonacci
