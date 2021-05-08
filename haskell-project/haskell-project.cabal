@@ -50,6 +50,7 @@ library
       SortingList
 			Tree
       TryLookup
+      VowelCount
   other-modules:
       Paths_haskell_project
   hs-source-dirs:

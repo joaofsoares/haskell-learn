@@ -15,6 +15,7 @@ checkDuplicate (x:xs)
 duplicateCount :: String -> Int
 duplicateCount = checkDuplicate . convertToLower
 
+-- thrid part solution
 duplicateCount' :: String -> Int
 duplicateCount' = length . filter ((>1) . length) . group . sort . map toLower
 
