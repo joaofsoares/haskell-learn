@@ -47,6 +47,7 @@ library
       PythagoreanTriple
       QuickSort
       RemoveDuplicates
+      ShorterConcat
       SortingList
 			Tree
       TryLookup
