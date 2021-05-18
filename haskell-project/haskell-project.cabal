@@ -31,6 +31,8 @@ library
       Circumference
       CountDuplicates
       CountWords
+      CreatePhoneNumber
+      DescendingOrder
       Factorial
       Fibonacci
       FindFirstNonRepeatedElement
