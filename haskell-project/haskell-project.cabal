@@ -42,6 +42,7 @@ library
       HasPath
       HelloWorld
       IsAscendent
+      Isograms
       MaximumWealth
       Palindrome
       Person
