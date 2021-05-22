@@ -50,6 +50,7 @@ library
       PythagoreanTriple
       QuickSort
       RemoveDuplicates
+      RomanNumberDecoder
       ShorterConcat
       SortingList
 			Tree
