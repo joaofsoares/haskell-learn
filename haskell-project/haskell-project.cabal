@@ -29,6 +29,8 @@ library
   exposed-modules:
       Anagram
       BitCounting
+      CamelCase
+      CamelCaseWithSplit
       Circumference
       CountDuplicates
       CountWords
@@ -44,6 +46,7 @@ library
       HelloWorld
       IsAscendent
       Isograms
+      Likes
       MaximumWealth
       Palindrome
       Person
