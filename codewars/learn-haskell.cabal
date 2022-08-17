@@ -1,0 +1,118 @@
+cabal-version:      2.4
+name:               learn-haskell
+version:            0.1.0.0
+
+-- A short (one-line) description of the package.
+-- synopsis:
+
+-- A longer description of the package.
+-- description:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+
+-- The license under which the package is released.
+-- license:
+
+-- The package author(s).
+-- author:
+
+-- An email address to which users can send suggestions, bug reports, and patches.
+-- maintainer:
+
+-- A copyright notice.
+-- copyright:
+-- category:
+
+library
+  exposed-modules:
+    Algorithm.BinarySearchTree,
+    Algorithm.QuickSort,
+    AreTheyTheSame,
+    ArrayDifference,
+    BestTravel,
+    BreakCamelCase,
+    CamelCase,
+    CalcStringRotation,
+    CountingDuplicates,
+    DateByDayNumber,
+    Dec2Fact,
+    DeleteDigit,
+    DetectPangram,
+    DigitalRoot,
+    DirectionsReduction,
+    DivisibleByThree,
+    DontGiveMeFive,
+    DuplicateEncoder,
+    Factorial,
+    FindMissedNumber,
+    FindUniqueNumber,
+    FlattenSortArray,
+    FramedReflection,
+    HighAndLow,
+    HighScoreWord,
+    HowManyNines,
+    HumanReadableTime,
+    ISBN,
+    IsNumberPrime,
+    LoveVsFriendship,
+    Manhattan,
+    MaxLengthDiff,
+    MessageValidator,
+    MinMax,
+    MultiplesOf3And5,
+    NthFibonacci,
+    NumberOfDivisors,
+    NumberPairs,
+    ObservedPin,
+    Palindrome1,
+    Palindrome1Half,
+    Palindrome2,
+    Palindrome3,
+    Pentabonacci,
+    PersistentBugger,
+    PrizeDraw,
+    PyramidSlideDown,
+    RemoveParentheses,
+    RomanNumberDecoder,
+    RomanNumberEncoder,
+    SpecialMultiples,
+    SumOfParts,
+    TwoSum,
+    UnluckyDays,
+    ValidateWord,
+    ValidParentheses,
+    VowelCount,
+    VowelIndices,
+    YourOrderPlease,
+    WhereIsMyParent,
+    WhatIsBetween
+  hs-source-dirs:
+    lib
+  build-depends:
+    base ^>=4.14.3.0,
+    time,
+    split,
+    text,
+    primes
+  default-language:
+    Haskell2010
+
+-- extra-source-files: CHANGELOG.md
+
+executable learn-haskell
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules: Main
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    base ^>=4.14.3.0,
+                      learn-haskell,
+                      time,
+                      split,
+                      text,
+                      primes
+    hs-source-dirs:   app
+    default-language: Haskell2010
