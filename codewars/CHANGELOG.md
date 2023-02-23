@@ -1,4 +1,4 @@
-# Revision history for learn-haskell
+# Revision history for codewars
 
 ## 0.1.0.0 -- YYYY-mm-dd
 
