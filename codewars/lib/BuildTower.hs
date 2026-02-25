@@ -7,7 +7,7 @@ createLine n mx =
    in concat (replicate side " " ++ replicate n "*" ++ replicate side " ")
 
 getMaxLines :: Int -> [(Int, Int)]
-getMaxLines n = map (\x -> (x, max)) lines
+getMaxLines n = map (, max) lines
   where
     lines = take n [1, 3 ..]
     max = last lines

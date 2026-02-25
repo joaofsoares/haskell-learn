@@ -1,4 +1,4 @@
-cabal-version:      3.8
+cabal-version:      3.4
 -- The cabal-version field refers to the version of the .cabal specification,
 -- and can be different from the cabal-install (the tool) version and the
 -- Cabal (the library) version you are using. As such, the Cabal (the library)
@@ -29,13 +29,16 @@ version:            0.1.0.0
 -- description:
 
 -- The license under which the package is released.
-license:            NONE
+license:            BSD-3-Clause
+
+-- The file containing the license text.
+license-file:       LICENSE
 
 -- The package author(s).
-author:             joaofsoares@yahoo.com
+author:             joaofsoares
 
 -- An email address to which users can send suggestions, bug reports, and patches.
-maintainer:         joaofsoares
+maintainer:         joaofsoares@yahoo.com
 
 -- A copyright notice.
 -- copyright:
@@ -47,86 +50,10 @@ extra-doc-files:    CHANGELOG.md
 -- Extra source files to be distributed with the package, such as examples, or a tutorial module.
 -- extra-source-files:
 library
-  exposed-modules:
-    Algorithm.BinarySearchTree,
-    Algorithm.QuickSort,
-    AreTheyTheSame,
-    ArrayDifference,
-    BackspacesInString,
-    BestTravel,
-    BreakCamelCase,
-    BuildTower,
-    CamelCase,
-    ChangingLetters,
-    CalcStringRotation,
-    CountingDuplicates,
-    DateByDayNumber,
-    Dec2Fact,
-    DeleteDigit,
-    DetectPangram,
-    DigitalRoot,
-    DirectionsReduction,
-    DivisibleByThree,
-    DontGiveMeFive,
-    DuplicateEncoder,
-    Factorial,
-    FindMissedNumber,
-    FindUniqueNumber,
-    FlattenSortArray,
-    FramedReflection,
-    HighAndLow,
-    HighScoreWord,
-    HowManyNines,
-    HumanReadableTime,
-    ISBN,
-    IsNumberPrime,
-    LoveVsFriendship,
-    Manhattan,
-    MaxLengthDiff,
-    MessageValidator,
-    MinMax,
-    MovingZeroToTheEnd,
-    MultiplesOf3And5,
-    NextBiggestNumber,
-    NthFibonacci,
-    NumberOfDivisors,
-    NumberPairs,
-    ObservedPin,
-    Palindrome1,
-    Palindrome1Half,
-    Palindrome2,
-    Palindrome3,
-    Pentabonacci,
-    Permutations,
-    PersistentBugger,
-    PrizeDraw,
-    PyramidSlideDown,
-    RemoveParentheses,
-    RomanNumberDecoder,
-    RomanNumberEncoder,
-    SimpleStringExpansion,
-    SmallEnough,
-    SpecialMultiples,
-    SumOfParts,
-    TwoSum,
-    UnluckyDays,
-    ValidateWord,
-    ValidParentheses,
-    VowelCount,
-    VowelIndices,
-    YourOrderPlease,
-    WhereIsMyParent,
-    WhatIsBetween
-  hs-source-dirs:
-    lib
-  build-depends:
-    base ^>=4.17.0.0,
-    time,
-    split,
-    text,
-    primes
-  default-language:
-    Haskell2010
+    exposed-modules:
+        AreTheyTheSame
+    hs-source-dirs: lib
+    build-depends:    base ^>=4.17.0.0,
 
 common warnings
     ghc-options: -Wall
@@ -146,10 +73,10 @@ executable codewars
 
     -- Other library packages from which modules are imported.
     build-depends:    base ^>=4.17.0.0,
-                      codewars
+                      codewars ^>= 0.1.0.0
 
     -- Directories containing source files.
     hs-source-dirs:   app
 
     -- Base language which the package is written in.
-    default-language: Haskell2010
+    default-language: GHC2021
